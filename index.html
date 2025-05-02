@@ -1,19 +1,115 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<html lang="nl">
 
-  <body>
-    <img src="images/front-image-with-text.jpg" class="full-image">
-    <div class="container">
-      <h1 class="header">
-        Ga je met ons mee
-        <br/>
-        Op 3 mei 2025?
-      </h1>
-      <p>Meer info volgt!</p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onze trouwdag</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header image -->
+  <header>
+    <img src="images/front-image-with-text.jpg" alt="Voorbeeldfoto" class="full-image" />
+  </header>
+
+  <main class="container">
+    <!-- Intro -->
+    <section class="intro">
+      <h1>Ga je met ons mee<br />op 3 mei 2025?</h1>
+      <div></div>
+    </section>
+
+    <!-- Planning Section -->
+    <section class="planning">
+      <h2>Planning</h2>
+      <div class="step">
+        <button class="accordion">10:45 - Verwelkoming</button>
+        <div class="panel">
+          <div>De burgerlijke trouw gaat door om 11 uur in het Arenbergkasteel te Heverlee, we worden gezamenlijk naar de zaal gebracht, daarom is het nodig reeds om 10u45 aanwezig te zijn.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">11:00 - Burgerlijke trouw</button>
+        <div class="panel">
+          <div>We starten de dag met een wettelijke ceremonie in het Arenbergkasteel te Heverlee.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">11:45 - Receptie & lunch</button>
+        <div class="panel">
+          <div>Na de wettelijke plechtigheid nemen we nog even enkele foto's, hierna genieten we van een glaasje en een hapje. Dit gaat door in het Thermotechnisch Instituut, dit is op wandelafstand van het kasteeel.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">13:30 - Kerkelijke trouw</button>
+        <div class="panel">
+          <div>Om 13u30 trouwen we met een plechtige ceremonie in de Sint-Jan de Doperkerk te Leuven. De ceremonie start om 13u30, gelieve op dit moment al plaatsgenomen te hebben.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">18:30 - Diner & avondfeest</button>
+        <div class="panel">
+          <div>Om de avond in stijl af te sluiten, bouwen we een feestje in de Horta Art Nouveau zaal in Antwerpen. We starten met een receptie, genieten daarna van een uitgebreid diner voor we onze benen nog wat losgooien op de dansvloer!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parking Section -->
+    <section class="parking">
+      <h2>Parkeren</h2>
+      <div class="step">
+        <button class="accordion">Arenbergkasteel en Thermotechnisch Instituut</button>
+        <div class="panel">
+          <div>Zowel voor de burgerlijke trouw als de receptie achteraf kan geparkeerd worden in de Kardinaal Mercierlaan, hier kan gratis geparkeerd worden. Mochten hier geen parkeerplaatsen meer te vinden zijn, dan raden we aan in de straten rond het Kantinneplein te parkeren, dit is ook groene zone en nog steeds op wandelafstand.</div>
+          <br>
+          <div>Zijn er minder mobiele mensen voor wie die (korte) wandeling iets te vermoeiend is, er is een mogelijkheid tot aan het kasteel te rijden om mensen af te zetten en daarna de auto verder te parkeren. Gelieve ons hiervoor te contacteren.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">Sint-Jan de Doperkerk</button>
+        <div class="panel">
+          <div>In theorie is het mogelijk van het Thermotechnisch Instituut naar de kerk te wandelen. Dit kan via een mooie wandeling door het Arenbergpark, maar dit duurt wel een half uurtje.</div>
+          <br>
+          <div>We raden aan met de auto te gaan, dit duurt een kleine 10 minuutjes. De kerk bevindt zich in het Groot Begijnhof, deze heeft drie parkings, bereikbaar vanaf de ring van Leuven. Voor de ceremonie is het de bedoeling om op parking 3 te parkeren.</div>
+        </div>
+      </div>
+      <div class="step">
+        <button class="accordion">Horta Art Nouveau zaal</button>
+        <div class="panel">
+          <div>De zaal bevindt zich in centrum Antwerpen, hier is spijtig genoeg geen exclusieve parking. Wel zijn er een aantal omliggende parkings. Volgende parkings zijn rondom Horta gelegen (+/- 50 m afstand) en geopend (openingsuren
+          onder voorbehoud):
+         </div>
+         <ul>
+          <li>
+          Parking Horta : Lange Gang (van 07u00 – 02u00 geopend - 00/24 te verlaten)
+          </li>
+          <li>
+          Parking Hopland : Hopland 40 (van 07u00 tot 02u00 geopend - 00/24 te verlaten)
+          </li>
+          <li>
+          Parking Stadsschouwburg : Meistraat 4 (van 07u00 tot 02u00 geopend - 00/24 te verlaten)
+          </li>
+          <li>
+          Parking Inno : Hopland 45 (van 07u00 tot 22u00 geopend - 00/24 te verlaten)</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Accordion functionality
+    const acc = document.querySelectorAll('.accordion');
+    acc.forEach((btn) => {
+      btn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+
 </html>
