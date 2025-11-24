@@ -9,8 +9,124 @@
 </head>
 
 <body>
-  <iframe src="https://share.garmin.com/TACharlotteBen" width="100%" height="600" style="border: none;">
 </iframe>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te Araroa</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container1 {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Normal page width for title + description */
+    .content-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    /* But the map should break out to full width */
+    .fullwidth-map {
+      width: 100vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      text-align: center;
+      color: #222;
+    }
+
+    p.description1 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .map-wrapper {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    iframe {
+      width: 100%;
+      height: 70vh;
+      border: none;
+    }
+
+    .mapshare-link {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .mapshare-link a {
+      background: #0070f3;
+      color: white;
+      padding: 0.6rem 1.1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.15s;
+    }
+
+    .mapshare-link a:hover {
+      background: #0059c5;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container1 content-container">
+    <h1>Te Araroa</h1>
+    <p class="description1">
+      Volg ons avontuur tijdens Te Araroa, waar we Nieuw-Zeeland doorkruisen van Cape Reinga tot Bluff. Een pad van 3000 kilometer dat helemaal van het noorden naar het zuiden loopt.
+      Tijdens het wandelen wordt deze kaart om de 10 minuten ge"update met een nieuwe locatie en kan je live volgen waar we ons bevinden!
+    </p>
+
+    <div class="fullwidth-map">
+    <div class="map-wrapper">
+      <iframe src="https://share.garmin.com/TACharlotteBen" allowfullscreen>
+      </iframe>
+    </div>
+    </div>
+
+    <div class="mapshare-link">
+      <a href="https://share.garmin.com/TACharlotteBen" target="_blank">
+        Externe website met onze route
+      </a>
+    </div>
+  </div>
+
 </body>
 
 </html>
